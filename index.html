@@ -492,6 +492,74 @@
                 </div>
                 <div><br></div>
         </div>
+         <div class="row">
+               <div class="col-sm-12">
+                    <h7 align="left"><strong>Project Title: AI-Powered Retrieval-Augmented Generation (RAG) Customer Support Agent </strong></h7>
+               </div>
+               <div class="col-sm-12"><strong> E&ICT Academy, IIT Kanpur<br>
+                    Role: Internship <br>
+                    Designed on: Generative AI
+                    Technology used: Langchain, DPR (Dense Passage Retrieval), FAISS, FLAN-T5 (Seq2Seq), Streamlit, PyTorch (CUDA/CPU)<br>
+                    Project Details & Responsibilities<br></strong>
+                    Roles & Responsibilities:<br>
+                    Customer support teams in modern organizations handle thousands of repetitive queries 
+                    daily related to FAQs, policies, order tracking, refunds, onboarding steps, and 
+                    troubleshooting. Traditional rule-based chatbots fail to scale due to rigidity, while standalone 
+                    Large Language Models (LLMs) often generate hallucinated or outdated responses 
+                    because they lack access to enterprise-specific knowledge. 
+                    The objective of this project is to design and implement an AI-powered customer support 
+                    agent using Retrieval-Augmented Generation (RAG) that retrieves accurate information 
+                    from a curated knowledge base before generating responses. The system ensures 
+                    grounded, explainable, and reliable answers, significantly reducing human agent 
+                    workload while improving response accuracy and customer satisfaction. <br>
+                    Build the project using PYTHON
+                    <ul>
+                            <li>	Build a domain-aware AI support agent using RAG architecture. </li>
+                            <li>	Reduce hallucinations by grounding responses in verified documents.</li>
+                            <li>	Automate resolution of repetitive customer queries. </li>
+                            <li>	Design a modular, scalable, production-ready project structure. </li>
+                            <li>	Evaluate system performance using real-world metrics.  </li>
+                    </ul>        
+                    Following key modules are implemented <br>
+                    <ul>
+                            <li>	Data Layer (data/) 
+                                        ● Stores raw support documents (FAQs, manuals, policies) 
+                                        ● Contains cleaned and chunked versions for embedding 
+                                        ● Ensures separation between raw and processed data  </li>
+                            <li>	Embedding Layer (embeddings/) 
+                                        ● Converts document chunks into vector embeddings 
+                                        ● Stores embeddings in a vector database (e.g., ChromaDB, FAISS) 
+                                        ● Acts as the foundation for semantic retrieval </li>
+                            <li>	Retrieval Layer (retriever/) 
+                                ● Performs similarity search using user queries 
+                                ● Fetches the most relevant document chunks 
+                                ● Controls retrieval depth (top-k results)</li> 
+                                <li>LLM Layer (llm/) 
+                                ● Defines prompt templates 
+                                ● Handles interaction with the LLM (OpenAI / Gemini / Claude) 
+                                ● Generates final responses using retrieved context </li>
+                                <li>RAG Pipeline (rag_pipeline/) 
+                                ● Orchestrates the full RAG flow: 
+                                1. Query intake 
+                                2. Context retrieval 
+                                3. Prompt construction 
+                                4. Response generation 
+                                ● Includes fallback logic when no relevant context is found</li> 
+                                <li>Evaluation Module (evaluation/) 
+                                ● Measures: 
+                                ○ Accuracy 
+                                ○ Relevance 
+                                ○ Response latency 
+                                ○ Hallucination rate 
+                                ● Enables comparison with a baseline LLM-only chatbot</li> 
+                                <li>Interface Layer (interface/) 
+                                ● User-facing application (Web / API) 
+                                ● Allows real-time customer interaction 
+                                ● Can be extended for agent dashboards or CRM integration </li>
+                    </ul>
+                </div>
+                <div><br></div>
+        </div>
         <div class="row">
                <div class="col-sm-12">
                     <h7 align="left"><strong>Project Title: Customer Purchase Behavior Analysis & Prediction for Amazon </strong></h7>
@@ -1009,5 +1077,6 @@
         </div>
     </div>
 </body>
+
 
 

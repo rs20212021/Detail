@@ -522,10 +522,13 @@
                     </ul>        
                     Following key modules are implemented <br>
                     <ul>
-                            <li>	Data Layer (data/) <br>
-                                        ● Stores raw support documents (FAQs, manuals, policies) <br>
-                                        ● Contains cleaned and chunked versions for embedding <br>
-                                        ● Ensures separation between raw and processed data  </li>
+                            <li>	Data Layer (data/) 
+                                <ul>
+                                     <li>  ● Stores raw support documents (FAQs, manuals, policies) </li>
+                                     <li>   ● Contains cleaned and chunked versions for embedding </li>
+                                     <li> ● Ensures separation between raw and processed data  </li>
+                                </ul>
+                            </li>
                             <li>	Embedding Layer (embeddings/) 
                                         ● Converts document chunks into vector embeddings 
                                         ● Stores embeddings in a vector database (e.g., ChromaDB, FAISS) 
@@ -1077,6 +1080,7 @@
         </div>
     </div>
 </body>
+
 
 
 

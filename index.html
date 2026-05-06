@@ -538,40 +538,45 @@
                     Following key modules are implemented <br>
                     <ul>
                             <li>	Data Layer (data/) 
-                                  ● Stores raw support documents (FAQs, manuals, policies) 
-                                       ● Contains cleaned and chunked versions for embedding 
-                                      ● Ensures separation between raw and processed data 
+                                  <ul>
+                                    <li>Stores raw support documents (FAQs, manuals, policies) </li>
+                                    <li>   Contains cleaned and chunked versions for embedding </li>
+                                    <li>Ensures separation between raw and processed data </li>
+                                  </ul>
                             </li>
                             <li>	Embedding Layer (embeddings/) 
-                                        ● Converts document chunks into vector embeddings 
-                                        ● Stores embeddings in a vector database (e.g., ChromaDB, FAISS) 
-                                        ● Acts as the foundation for semantic retrieval </li>
+                                <ul>
+                                        <li> Converts document chunks into vector embeddings </li>
+                                        <li> Stores embeddings in a vector database (e.g., ChromaDB, FAISS) </li>
+                                        <li> Acts as the foundation for semantic retrieval </li>
+                                </ul>
+                            </li>
                             <li>	Retrieval Layer (retriever/) 
-                                ● Performs similarity search using user queries 
-                                ● Fetches the most relevant document chunks 
-                                ● Controls retrieval depth (top-k results)</li> 
+                                <ul> <li>Performs similarity search using user queries</li> 
+                                <li> Fetches the most relevant document chunks</li> 
+                                <li> Controls retrieval depth (top-k results)</li></<ul>
                                 <li>LLM Layer (llm/) 
-                                ● Defines prompt templates 
-                                ● Handles interaction with the LLM (OpenAI / Gemini / Claude) 
-                                ● Generates final responses using retrieved context </li>
+                                <ul><li> Defines prompt templates </li> 
+                                <li> Handles interaction with the LLM (OpenAI / Gemini / Claude) </li> 
+                                <li> Generates final responses using retrieved context </li> </ul></li>
                                 <li>RAG Pipeline (rag_pipeline/) 
-                                ● Orchestrates the full RAG flow: 
-                                1. Query intake 
-                                2. Context retrieval 
-                                3. Prompt construction 
-                                4. Response generation 
-                                ● Includes fallback logic when no relevant context is found</li> 
+                                <ul><li> Orchestrates the full RAG flow: <br>
+                                1. Query intake <br>
+                                2. Context retrieval <br> 
+                                3. Prompt construction <br>
+                                4. Response generation </li>
+                                <li> Includes fallback logic when no relevant context is found</li></ul></li> 
                                 <li>Evaluation Module (evaluation/) 
-                                ● Measures: 
-                                ○ Accuracy 
-                                ○ Relevance 
-                                ○ Response latency 
-                                ○ Hallucination rate 
-                                ● Enables comparison with a baseline LLM-only chatbot</li> 
+                                <ul><li> Measures: <br>
+                                ○ Accuracy <br>
+                                ○ Relevance <br>
+                                ○ Response latency <br> 
+                                ○ Hallucination rate </li>
+                                <li> Enables comparison with a baseline LLM-only chatbot </li></ul></li> 
                                 <li>Interface Layer (interface/) 
-                                ● User-facing application (Web / API) 
-                                ● Allows real-time customer interaction 
-                                ● Can be extended for agent dashboards or CRM integration </li>
+                                <ul> <li>User-facing application (Web / API) </li> 
+                                <li> Allows real-time customer interaction </li>
+                                <li></li> Can be extended for agent dashboards or CRM integration </li> </ul> </li>
                     </ul>
                 </div>
                 <div><br></div>

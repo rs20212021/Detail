@@ -552,31 +552,46 @@
                                 </ul>
                             </li>
                             <li>	Retrieval Layer (retriever/) 
-                                <ul> <li>Performs similarity search using user queries</li> 
-                                <li> Fetches the most relevant document chunks</li> 
-                                <li> Controls retrieval depth (top-k results)</li></<ul>
-                                <li>LLM Layer (llm/) 
-                                <ul><li> Defines prompt templates </li> 
-                                <li> Handles interaction with the LLM (OpenAI / Gemini / Claude) </li> 
-                                <li> Generates final responses using retrieved context </li> </ul></li>
-                                <li>RAG Pipeline (rag_pipeline/) 
-                                <ul><li> Orchestrates the full RAG flow: <br>
-                                1. Query intake <br>
-                                2. Context retrieval <br> 
-                                3. Prompt construction <br>
-                                4. Response generation </li>
-                                <li> Includes fallback logic when no relevant context is found</li></ul></li> 
-                                <li>Evaluation Module (evaluation/) 
-                                <ul><li> Measures: <br>
+                                <ul> 
+                                    <li>Performs similarity search using user queries</li> 
+                                    <li> Fetches the most relevant document chunks</li> 
+                                    <li> Controls retrieval depth (top-k results)</li>
+                                </ul> 
+                            </li>
+                            <li>LLM Layer (llm/) 
+                                <ul>
+                                    <li> Defines prompt templates </li> 
+                                    <li> Handles interaction with the LLM (OpenAI / Gemini / Claude) </li> 
+                                    <li> Generates final responses using retrieved context </li> 
+                                </ul>
+                            </li>
+                            <li>RAG Pipeline (rag_pipeline/) 
+                                <ul>
+                                    <li> Orchestrates the full RAG flow: <br>
+                                    1. Query intake <br>
+                                    2. Context retrieval <br> 
+                                    3. Prompt construction <br>
+                                    4. Response generation </li>
+                                    <li> Includes fallback logic when no relevant context is found</li>
+                                </ul>
+                            </li> 
+                            <li>Evaluation Module (evaluation/) 
+                                <ul>
+                                    <li> Measures: <br>
                                 ○ Accuracy <br>
                                 ○ Relevance <br>
                                 ○ Response latency <br> 
                                 ○ Hallucination rate </li>
-                                <li> Enables comparison with a baseline LLM-only chatbot </li></ul></li> 
-                                <li>Interface Layer (interface/) 
-                                <ul> <li>User-facing application (Web / API) </li> 
-                                <li> Allows real-time customer interaction </li>
-                                <li></li> Can be extended for agent dashboards or CRM integration </li> </ul> </li>
+                                <li> Enables comparison with a baseline LLM-only chatbot </li>
+                                </ul>
+                            </li> 
+                            <li>Interface Layer (interface/) 
+                                <ul> 
+                                    <li>User-facing application (Web / API) </li> 
+                                    <li> Allows real-time customer interaction </li>
+                                    <li> Can be extended for agent dashboards or CRM integration </li> 
+                                </ul> 
+                            </li>
                     </ul>
                 </div>
                 <div><br></div>

@@ -538,7 +538,7 @@
                <div class="col-sm-12">Organization: Softvine Technology Pvt. Ltd.<br>
                     Role: Team Lead <br>
                     Technology used: C#.NET, SQL Server<br>
-                    Project Details & Responsibilities:<br>                       
+                    <strong>Project Details & Responsibilities:</strong><br>                       
                         Requirements & System Analysis: Gathered requirements, created specification documents, determined application functionality, analyzed issues, and defined business logic like setting tariffs for vehicle bookings and driver hires. <br>
                         Architecture & Design: Designed the system architecture, web application layout, Low-Level Design (LLD), database architecture (ER diagrams, table entities), and UI mockup screens. <br>
                         Development & Deployment: Coded applications using C#.NET, handled deployment, and collaborated closely with the development team to clarify functional queries. <br>
@@ -554,88 +554,27 @@
                <div class="col-sm-12">
                     <h7 align="left"><strong>Project Title: AI-Powered Retrieval-Augmented Generation (RAG) Customer Support Agent </strong></h7>
                </div>
-               <div class="col-sm-12"><strong> E&ICT Academy, IIT Kanpur<br>
+               <div class="col-sm-12">E&ICT Academy, IIT Kanpur<br>
                     Role: Internship <br>
                     Designed on: Generative AI <br>
                     Technology used: Langchain, DPR (Dense Passage Retrieval), FAISS, FLAN-T5 (Seq2Seq), Streamlit, PyTorch (CUDA/CPU)<br>
-                    Project Details & Responsibilities<br></strong>
-                    Roles & Responsibilities:<br>
-                    Customer support teams in modern organizations handle thousands of repetitive queries 
-                    daily related to FAQs, policies, order tracking, refunds, onboarding steps, and 
-                    troubleshooting. Traditional rule-based chatbots fail to scale due to rigidity, while standalone 
-                    Large Language Models (LLMs) often generate hallucinated or outdated responses 
-                    because they lack access to enterprise-specific knowledge. 
-                    The objective of this project is to design and implement an AI-powered customer support 
-                    agent using Retrieval-Augmented Generation (RAG) that retrieves accurate information 
-                    from a curated knowledge base before generating responses. The system ensures 
-                    grounded, explainable, and reliable answers, significantly reducing human agent 
-                    workload while improving response accuracy and customer satisfaction. <br>
-                    Build the project using PYTHON
-                    <ul>
-                            <li>	Build a domain-aware AI support agent using RAG architecture. </li>
-                            <li>	Reduce hallucinations by grounding responses in verified documents.</li>
-                            <li>	Automate resolution of repetitive customer queries. </li>
-                            <li>	Design a modular, scalable, production-ready project structure. </li>
-                            <li>	Evaluate system performance using real-world metrics.  </li>
-                    </ul>        
-                    Following key modules are implemented <br>
-                    <ul>
-                            <li>	Data Layer (data/) 
-                                  <ul>
-                                    <li>Stores raw support documents (FAQs, manuals, policies) </li>
-                                    <li>   Contains cleaned and chunked versions for embedding </li>
-                                    <li>Ensures separation between raw and processed data </li>
-                                  </ul>
-                            </li>
-                            <li>	Embedding Layer (embeddings/) 
-                                <ul>
-                                        <li> Converts document chunks into vector embeddings </li>
-                                        <li> Stores embeddings in a vector database (e.g., ChromaDB, FAISS) </li>
-                                        <li> Acts as the foundation for semantic retrieval </li>
-                                </ul>
-                            </li>
-                            <li>	Retrieval Layer (retriever/) 
-                                <ul> 
-                                    <li>Performs similarity search using user queries</li> 
-                                    <li> Fetches the most relevant document chunks</li> 
-                                    <li> Controls retrieval depth (top-k results)</li>
-                                </ul> 
-                            </li>
-                            <li>LLM Layer (llm/) 
-                                <ul>
-                                    <li> Defines prompt templates </li> 
-                                    <li> Handles interaction with the LLM (OpenAI / Gemini / Claude) </li> 
-                                    <li> Generates final responses using retrieved context </li> 
-                                </ul>
-                            </li>
-                            <li>RAG Pipeline (rag_pipeline/) 
-                                <ul>
-                                    <li> Orchestrates the full RAG flow: <br>
-                                    1. Query intake <br>
-                                    2. Context retrieval <br> 
-                                    3. Prompt construction <br>
-                                    4. Response generation </li>
-                                    <li> Includes fallback logic when no relevant context is found</li>
-                                </ul>
-                            </li> 
-                            <li>Evaluation Module (evaluation/) 
-                                <ul>
-                                    <li> Measures: <br>
-                                ○ Accuracy <br>
-                                ○ Relevance <br>
-                                ○ Response latency <br> 
-                                ○ Hallucination rate </li>
-                                <li> Enables comparison with a baseline LLM-only chatbot </li>
-                                </ul>
-                            </li> 
-                            <li>Interface Layer (interface/) 
-                                <ul> 
-                                    <li>User-facing application (Web / API) </li> 
-                                    <li> Allows real-time customer interaction </li>
-                                    <li> Can be extended for agent dashboards or CRM integration </li> 
-                                </ul> 
-                            </li>
-                    </ul>
+                    <strong>Project Details & Responsibilities<br></strong>
+                    Problem Addressed: Traditional rule-based chatbots lack scalability, while standalone LLMs frequently hallucinate or provide outdated answers due to a lack of enterprise data access.<br>
+                    Core Objective: Design and implement a scalable, Python-based AI customer support agent utilizing Retrieval-Augmented Generation (RAG) to deliver accurate, grounded, and explainable responses. <br>
+                    Key Goals: <br>
+                    Build a domain-aware RAG architecture. <br>
+                    Minimize hallucinations by grounding answers in verified documents. <br>
+                    Automate resolutions for repetitive customer queries. <br>
+                    Ensure a modular, production-ready project structure. <br>
+                    Evaluate performance metrics against real-world standards. <br>
+                    System Architecture & Key Modules<br>
+                    Data Layer (data/): Stores raw support documentation (FAQs, manuals, policies), manages cleaned and chunked versions for embeddings, and separates raw data from processed outputs. <br>
+                    Embedding Layer (embeddings/): Converts document chunks into vector embeddings and stores them in a vector database (such as ChromaDB or FAISS) to power semantic retrieval. <br>
+                    Retrieval Layer (retriever/): Executes similarity searches based on user queries, fetches top-$k$ relevant document chunks, and controls retrieval depth. <br>
+                    LLM Layer (llm/): Defines prompt templates, manages interactions with models (OpenAI, Gemini, or Claude), and produces context-backed final responses. <br>
+                    RAG Pipeline (rag_pipeline/): Orchestrates the complete end-to-end flow (query intake, context retrieval, prompt construction, and response generation) alongside built-in fallback logic. <br>
+                    Evaluation Module (evaluation/): Measures system accuracy, relevance, response latency, and hallucination rates while benchmarking against baseline LLM-only models. <br>
+                    Interface Layer (interface/): Provides a user-facing web/API application for real-time interaction, extensible for agent dashboards and CRM integrations. <br>
                 </div>
                 <div><br></div>
         </div>
